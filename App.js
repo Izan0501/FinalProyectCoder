@@ -139,6 +139,7 @@ const showCart = () => {
         clone.querySelector('.btn-success').dataset.id = item.id
         clone.querySelector('.btn-danger').dataset.id = item.id
         clone.querySelector('.delete-button').dataset.id = item.id
+        //clone.querySelector('.shopBtn').dataset.id = item.id
         //countString.textContent = cartProducts.length;
 
 
@@ -218,7 +219,7 @@ document.addEventListener('click', (e) => {
 
         Swal.fire({
             icon: "success",
-            title: "Congratulations",
+            title: "Congratulations!!",
             text: "we successfully save your purchase!",
         });
 
@@ -239,6 +240,16 @@ document.addEventListener('click', (e) => {
 
     if (e.target.matches('.delete-button')) {
         btnDelete(e)
+        e.preventDefault()
+    }
+
+    if(e.target.matches('.shopBtn')) {
+        
+        Swal.fire({
+            icon: "success",
+            title: "Your Purchase Has Been Completed Successfully 🥳🥳",
+            text: "We appreciate your visit to our store, we hope you fly Soon!! 😁👍",
+        });
         e.preventDefault()
     }
 });

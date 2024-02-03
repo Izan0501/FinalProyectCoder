@@ -59,6 +59,21 @@ header {
   );
 }
 
+#btnShop {
+  color: white;
+  font-size: 1.3rem;
+  font-family: "Permanent Marker", cursive;
+  position: relative;
+  margin-top: -25px;
+  margin-left: 65px;
+  transition: all 0.5s;
+}
+
+#btnShop:hover {
+  transform: calc(2.52) !important;
+  color: #c53663;
+}
+
 .header__link {
   font-family: "Permanent Marker", cursive;
   color: white;
@@ -671,8 +686,8 @@ header .navegation li a:hover {
 }
 
 #textPrice {
-  margin-left: 40%;
-  margin-top: 3%;
+  margin-left: 65%;
+  margin-top: 0%;
   font-family: "Permanent Marker", cursive;
 }
 
